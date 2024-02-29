@@ -1,0 +1,12 @@
+# Start G-code:
+;  Cura requires the "dummy" preheat lines to prevent the slicer from adding it's own M109/M190 commands
+; M190 S{material_bed_temperature_layer_0}
+; M109 S{material_print_temperature_layer_0}
+EXTRUDER_TEMP={material_print_temperature}
+BED_TEMP={material_bed_temperature}
+START_PRINT
+
+# End G-code:
+MACHINE_DEPTH={machine_depth}
+
+END_PRINT
