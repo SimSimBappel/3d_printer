@@ -1,3 +1,6 @@
+# Create thumbnails
+# https://docs.mainsail.xyz/overview/slicer/cura
+
 # Start G-code:
 ;  Cura requires the "dummy" preheat lines to prevent the slicer from adding it's own M109/M190 commands
 ; M190 S{material_bed_temperature_layer_0}
@@ -13,3 +16,5 @@ START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_
 
 # End G-code:
 END_PRINT MACHINE_DEPTH={machine_depth}
+
+
